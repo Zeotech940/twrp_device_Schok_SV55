@@ -15,7 +15,7 @@ addons:
 services:
   - docker
 before_install:
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin 2>/dev/null
+  - echo Yourmom11!! | docker login -u Zeotech490 --password-stdin 2>/dev/null
   - docker pull fr3akyphantom/droid-builder:latest
 before_script:
   - cd $HOME && mkdir twrp
@@ -59,7 +59,7 @@ after_success:
 deploy:
   provider: releases
   # The secret api_key will be loaded from the environment variables
-  token: $GitOAUTHToken
+  token: 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
   cleanup: false
   file_glob: true
   file: $HOME/twrp/*.img
